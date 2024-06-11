@@ -1,0 +1,72 @@
+.TH CRM 1 "26.05.2024" "1.5" "My CRM manual"
+.SH NAME
+zenity \- skrypt do urochomienia projektu
+.PP
+zenity_service \- praca z przetwarzaniem danych użytkownika oraz bazą danych SQLite3 
+.SH SYNOPSIS
+.B zenity
+[\fB\-h \fIPUNKT\fR] [\fB\-v\fR]
+
+.SH DESCRIPTION
+Ten projekt umożliwia pracę z bazą danych SQLite3 dzięki odpowiednim poleceniom: SELECT, UPDATE, DELETE i innym. W tym projekcie zostały użyte wyżej wymienione komendy i nie tylko.
+
+.SH OPTIONS
+.TP
+\fB\-h \fIPUNKT\fR
+Wyświetla pomoc dla wybranego punktu. Dostępne punkty to:
+.RS 4
+.IP "1"
+Dodawanie administratora/logowanie: Naciśnij, aby rozpocząć pracę, wpisując imię użytkownika i hasło.
+.IP "2"
+Polecenia. Wpisz odpowiedni numer polecenia (np. 2.1)
+.IP "2.1"
+Dodawanie usługi: Dodaje nową usługę do bazy danych.
+.IP "2.2"
+Edytowanie usługi: Edytuje istniejącą usługę w bazie danych. Trzeba wpisać ID usługi.
+.IP "2.3"
+Dodawanie klienta: Dodaje nowego klienta do bazy danych. Trzeba wpisać jego dane.
+.IP "2.4"
+Dodawanie zamówienia: Dodaje nowe zamówienie do bazy danych. Trzeba wpisać ID klienta.
+.IP "2.5"
+Edytowanie klienta: Edytuje dane istniejącego klienta po ID.
+.IP "2.6"
+Usunięcie zamówienia: Usuwa istniejące zamówienie z bazy danych po ID zamówienia.
+.IP "2.7"
+Usunięcie klienta: Usuwa istniejącego klienta z bazy danych po ID klienta.
+.IP "2.8"
+Usunięcie usługi: Usuwa istniejącą usługę z bazy danych po ID usługi.
+.IP "2.9"
+Pokazać klientów: Wyświetla listę wszystkich klientów.
+.IP "2.10"
+Pokazać usługi: Wyświetla listę wszystkich usług.
+.IP "2.11"
+Pokazać zamówienia: Wyświetla listę wszystkich zamówień.
+.IP "2.12"
+Koniec: Kończy działanie programu.
+.RE
+
+.TP
+\fB\-v\fR
+Wyświetla wersję skryptu.
+
+.SH EXAMPLES
+.B Przykład 1: Wyświetlenie wersji skryptu
+.RS 4
+\fB./zenity.sh \-v\fR
+.RE
+
+.B Przykład 2: Wyświetlenie pomocy dla punktu 2.1
+.RS 4
+\fB./zenity.sh \-h 2.1\fR
+.RE
+
+.B Przykład 3: Uruchomienie skryptu bez opcji
+.RS 4
+\fB./zenity.sh\fR
+.RE
+.PP
+Aby rozpocząć pracę, trzeba nacisnąć '1. Dodawanie administratora/logowanie'. Później w tym oknie wpisać imię użytkownika i hasło.
+.SH AUTHOR
+Written by Nikolai Lavrinov (s201302@student.pg.edu.pl).
+.SH COPYRIGHT
+Prawa autorskie (C) 2024 Nikolai Lavrinov
